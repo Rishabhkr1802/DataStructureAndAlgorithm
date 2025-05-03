@@ -1,4 +1,4 @@
-//Check the given number is even or odd.
+// Program to find whether the number is odd or even
 
 const number = checkEvenOdd(9);
 
