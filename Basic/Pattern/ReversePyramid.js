@@ -1,15 +1,15 @@
 /*Program for print triangle
-* 
-* *
-* * *
-* * * *
 * * * * *
+* * * *
+* * *
+* *
+*
 */
 
 function printPattern(num) {
-  for (let i = 1; i <= num; i++) {
+  for (let i = num; i >= 1; i--) {
     let row = '';
-    for (let j = 5; j >= 1; j--) {
+    for (let j = 1; j <= i; j++) {
       row += '* ';
     }
     console.log(row.trim());
