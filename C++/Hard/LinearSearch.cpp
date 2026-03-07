@@ -3,6 +3,15 @@
 #include <iostream>
 using namespace std;
 
+bool linearSearch(int arr[], int size, int num) {
+  for(int i=0; i<size; i++) {
+    if(arr[i] == num) {
+      return true;
+    }
+  }
+  return false;
+}
+
 int main() {
   int number, temp;
   int arr[5] =  {12, 32, 43, 54, 64};
@@ -10,11 +19,13 @@ int main() {
   cout << "Enter a number : " << endl;
   cin >> number;
 
-  for (int i = 0; i<arr.length; i++) {
-    if(arr[i] === number) {
-      cout << "The Number is Present in array";
-      break;
-    }
+  bool found = linearSearch(arr, 5, number);
+  
+  if(found) {
+    cout << number << " is found in an array";
+  }
+  else {
+    cout << number << " is not found in an array";
   }
 
   return 0;
