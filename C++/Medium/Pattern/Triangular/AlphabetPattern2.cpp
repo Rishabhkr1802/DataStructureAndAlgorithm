@@ -3,9 +3,9 @@
 /*
 
 A
-A B
-A B C
-A B C D
+B B
+C C C
+D D D D
 
 */
 
@@ -18,12 +18,12 @@ int main() {
   cout << "Enter the number of lines : ";
   cin >> number;
 
-  for (int i=0; i<=number; i++) {
-    for (int j=i; j<i; j--) {
+  for (int row=1; row<=number; row++){
+    for (int col=1; col<=row; col++){
       cout << ch << " ";
-      ch = ch + 1;
     }
     cout << endl;
+    ch = ch + 1;
   }
 
   return 0;
