@@ -18,12 +18,14 @@ int main() {
   cout << "Enter the number : ";
   cin >> number;
 
-  for (int row=number; row > 0; row--) {
-    for (int col=row; col > number ; col--) {
-      cout << " * ";
+  for (int row=1; row<=number; row++) {
+    for (int col=1; col<row; col++){
+      cout << "   ";
     }
 
-    // for (int col=row; col > )
+    for(int col=1; col<=number - row + 1; col++) {
+      cout << " * ";
+    }
     cout << endl;
   }
 
