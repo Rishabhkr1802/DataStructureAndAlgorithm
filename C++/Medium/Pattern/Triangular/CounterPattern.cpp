@@ -14,7 +14,7 @@ using namespace std;
 
 int main() {
   int number, count=1;
-  cout << "Enter the number of lines : ";
+  cout << "Enter the number of lines  : ";
   cin >> number;
 
   for (int row=0; row<=number; row++) {
