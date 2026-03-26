@@ -17,7 +17,7 @@ int main()
   int number;
   int row, col;
 
-  cout << "Enter the number ";
+  cout << "Enter the number :";
   cin >> number;
 
   for (row = 1; row <= number; row++)
