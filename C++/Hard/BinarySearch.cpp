@@ -4,7 +4,11 @@
 using namespace std;
 
 bool binarySearch(int arr[], int size, int num) {
-  for (int i=1; i<=size/2; i++ ) {
+  int start, end, mid;
+  start = arr[0];
+  end = arr[size - 1];
+  mid = (start + end ) /2;
+  for (int i=1; i<=mid; i++ ) {
     
   }
   return false;
