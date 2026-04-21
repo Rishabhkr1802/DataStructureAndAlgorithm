@@ -19,7 +19,7 @@ int main() {
   int arr[5] = {43, 52, 65, 71, 89};
   int number;
 
-  cout << "Enter the number :- ";
+  cout << "Enter the number:- ";
   cin >> number;
 
   bool found = binarySearch(arr, 5, number);
