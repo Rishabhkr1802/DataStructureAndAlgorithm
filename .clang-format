@@ -1,0 +1,5 @@
+BasedOnStyle: Google
+BreakBeforeBraces: Attach
+IndentWidth: 2
+AlignConsecutiveAssignments: true
+ColumnLimit: 100

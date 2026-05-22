@@ -1,0 +1,98 @@
+========================================
+LOGICAL OPERATORS IN C++
+========================================
+
+1. AND (&&)
+----------------------------------------
+
+a  b   a && b
+0  0      0
+0  1      0
+1  0      0
+1  1      1
+
+Meaning: Returns true only if BOTH conditions are true.
+
+
+2. OR (||)
+----------------------------------------
+
+a  b   a || b
+0  0      0
+0  1      1
+1  0      1
+1  1      1
+
+Meaning: Returns true if ANY one condition is true.
+
+
+3. NOT (!)
+----------------------------------------
+
+a    !a
+0     1
+1     0
+
+Meaning: Reverses the result.
+
+
+4. XOR (^)
+----------------------------------------
+
+a  b   a ^ b
+0  0      0
+0  1      1
+1  0      1
+1  1      0
+
+Meaning: Returns true when BOTH values are DIFFERENT.
+NOTE: In C++, ^ is BITWISE XOR operator.
+
+
+5. XNOR
+----------------------------------------
+
+a  b   XNOR
+0  0     1
+0  1     0
+1  0     0
+1  1     1
+
+Meaning: Returns true when BOTH values are SAME.
+
+XNOR is NOT directly available in C++.
+we can create it using:
+
+!(a ^ b)
+
+
+========================================
+EXAMPLE IN C++
+========================================
+
+#include<iostream>
+using namespace std;
+
+int main() {
+
+    int a = 1;
+    int b = 0;
+
+    cout << "AND  : " << (a && b) << endl;
+    cout << "OR   : " << (a || b) << endl;
+    cout << "NOT  : " << (!a) << endl;
+    cout << "XOR  : " << (a ^ b) << endl;
+    cout << "XNOR : " << (!(a ^ b)) << endl;
+
+    return 0;
+}
+
+========================================
+OUTPUT
+========================================
+
+AND  : 0
+OR   : 1
+NOT  : 0
+XOR  : 1
+XNOR : 0
