@@ -96,3 +96,22 @@ OR   : 1
 NOT  : 0
 XOR  : 1
 XNOR : 0
+
+
+========================================
+Time Complexity
+========================================
+
+Always find worst case i.e 0(1);
+
+Complexity	    Name	        Example
+
+O(1)	        Constant	    Array access
+O(log n)	    Logarithmic	    Binary search
+O(√n)	        Square root	    Optimized prime checking
+O(n)	        Linear	        Simple loop
+O(n log n)	    Linearithmic	Merge sort, Heap sort
+O(n²)	        Quadratic	    Nested loops
+O(n³)	        Cubic	        Triple nested loops
+O(2ⁿ)	        Exponential	    Recursive subset generation
+O(n!)	        Factorial	    Traveling salesman brute force
